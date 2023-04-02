@@ -13,12 +13,12 @@ gradle clean build
 
 ### Execute bash of the docker container running Spark
 ```
-docker exec -it parallel-assignment2-spark-1 /bin/bash
+docker exec -it transaction-streaming-infra-spark-1 /bin/bash
 ```
 
 ### Submit the task to Spark
 ```
-spark-submit --class hk.edu.cuhk.TransactionStreamingServer --master local[3] /test-files/transaction-streaming-server/build/libs/TransactionStreamingServer-1.0-SNAPSHOT.jar
+spark-submit --class hk.edu.cuhk.TransactionStreamingServer --master local[3] /test-files/TransactionStreamingServer-1.0-SNAPSHOT.jar
 ```
 
 ### Read the output
